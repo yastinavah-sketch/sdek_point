@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет: Развитие HR-бренда СДЭК</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sdek: {
+                            DEFAULT: '#52B743', // Корпоративный зеленый
+                            dark: '#3d8e31',
+                            light: '#eef8eb',
+                        },
+                        dark: '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .glass-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f1f5f9;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-sdek selection:text-white overflow-x-hidden">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-dark text-white pt-12 pb-20 sm:pt-16 sm:pb-24 px-4 sm:px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex items-center space-x-3 mb-6 sm:mb-8">
+                <div class="w-10 h-10 bg-sdek rounded-lg flex items-center justify-center font-bold text-xl shrink-0">С</div>
+                <span class="text-lg sm:text-xl font-semibold tracking-wider text-slate-300">СДЭК <span class="text-sdek">HR-Бренд</span></span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 sm:mb-4 leading-tight">Отчет о проделанной работе<br><span class="text-sdek">в социальных сетях</span></h1>
+            <p class="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl">Анализ текущих показателей, тест новых форматов и стратегическое планирование контента для удержания и привлечения аудитории.</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 -mt-8 sm:-mt-12 relative z-20 pb-16 sm:pb-24">
+        
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
+            <div class="glass-card p-5 sm:p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm font-medium text-slate-500 mb-1">Просмотры</p>
+                        <h3 class="text-3xl font-bold text-dark">13 464</h3>
+                    </div>
+                    <div class="p-2 bg-sdek-light text-sdek rounded-lg"><i data-lucide="eye"></i></div>
+                </div>
+                <p class="text-sm text-slate-500 mt-4 flex items-center">
+                    <span class="text-sdek font-medium mr-2">64.8%</span> неподписчики
+                </p>
+            </div>
+            
+            <div class="glass-card p-5 sm:p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm font-medium text-slate-500 mb-1">Охват аккаунтов</p>
+                        <h3 class="text-3xl font-bold text-dark">5 224</h3>
+                    </div>
+                    <div class="p-2 bg-sdek-light text-sdek rounded-lg"><i data-lucide="users"></i></div>
+                </div>
+                <p class="text-sm text-slate-500 mt-4 flex items-center">
+                    <span class="text-sdek font-medium flex items-center mr-2"><i data-lucide="trending-up" class="w-4 h-4 mr-1"></i>+275.8%</span> рост охвата
+                </p>
+            </div>
+
+            <div class="glass-card p-5 sm:p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm font-medium text-slate-500 mb-1">Действия в профиле</p>
+                        <h3 class="text-3xl font-bold text-dark">384</h3>
+                    </div>
+                    <div class="p-2 bg-sdek-light text-sdek rounded-lg"><i data-lucide="activity"></i></div>
+                </div>
+                <p class="text-sm text-slate-500 mt-4 flex items-center">
+                    <span class="text-sdek font-medium flex items-center mr-2"><i data-lucide="trending-up" class="w-4 h-4 mr-1"></i>+41.7%</span>
+                </p>
+            </div>
+
+            <div class="glass-card p-5 sm:p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm font-medium text-slate-500 mb-1">Доля пропуска Reels</p>
+                        <h3 class="text-3xl font-bold text-sdek">28%</h3>
+                    </div>
+                    <div class="p-2 bg-sdek-light text-sdek rounded-lg"><i data-lucide="play-circle"></i></div>
+                </div>
+                <p class="text-sm text-slate-500 mt-4 leading-relaxed">
+                    Минимальный показатель. Ранее доходил до 60% на корпоративных и юмористических роликах.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section: Итоги работы -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-8 mb-8 sm:mb-12">
+            <div class="lg:col-span-2 glass-card p-5 sm:p-8">
+                <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 flex items-center"><i data-lucide="check-square" class="mr-3 text-sdek shrink-0"></i> Итоги работы и аналитика</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-sdek mr-3 mt-0.5 flex-shrink-0"></i>
+                        <p><strong>Оптимизация ресурса:</strong> Временно отложено оформление «Актуального». Ресурс направлен на съемку Reels, так как оформление логичнее делать, когда контент начнет массово «залетать» и привлекать новую аудиторию.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-sdek mr-3 mt-0.5 flex-shrink-0"></i>
+                        <p><strong>Анализ форматов:</strong> Разговорные Reels показывают статистику лучше, чем перепосты сборных видео. Наш формат хороший, новые люди нас видят, но пока мы в поиске идеального триггера для подписки (ЦА).</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-sdek mr-3 mt-0.5 flex-shrink-0"></i>
+                        <p><strong>Улучшение вовлеченности:</strong> Глубина просмотра увеличилась, а доля пропуска контента (skip rate) в самых успешных роликах упала с 55-60% до 28%. Этого удалось достичь за счет стратегии с упором на разговорные Reels и перевыкладку старых юмористических видео.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-sdek mr-3 mt-0.5 flex-shrink-0"></i>
+                        <p><strong>Тестирование новых площадок:</strong> Написано по 5 постов в дополнительную соцсеть для оценки охвата. В будущем, чтобы понять, где выгоднее масштабировать трафик, можно каждый месяц брать новую площадку для развития контента.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="glass-card p-5 sm:p-8 bg-slate-50">
+                <h2 class="text-lg sm:text-xl font-bold mb-5 sm:mb-6 flex items-center"><i data-lucide="alert-triangle" class="mr-3 text-amber-500 shrink-0"></i> Сложности и решения</h2>
+                <div class="mb-5 sm:mb-6">
+                    <h4 class="font-semibold text-slate-800 mb-2">Проблема:</h4>
+                    <p class="text-sm text-slate-600">Сложности в коммуникациях и оперативное согласование контента.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-slate-800 mb-2">Решение:</h4>
+                    <p class="text-sm text-slate-600 mb-3">Переход на систему съемок <strong>заранее и большими блоками</strong>.</p>
+                    <p class="text-sm text-slate-600">Благодаря запасу готового контента мы можем допускать сдвиги с учетом занятости сотрудников. Для ускорения процессов я приезжаю локально.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Что делаем сейчас -->
+        <div class="glass-card p-5 sm:p-8 mb-8 sm:mb-12 border-l-4 border-l-sdek">
+            <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 flex items-center"><i data-lucide="zap" class="mr-3 text-sdek shrink-0"></i> Что в работе прямо сейчас</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-3 sm:mb-4 text-slate-700">Производственный план</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm sm:text-base">
+                        <li class="flex items-start sm:items-center"><i data-lucide="video" class="w-4 h-4 mr-2 mt-1 sm:mt-0 text-sdek shrink-0"></i>Съемки с Олей до ее отпуска (с 29 числа)</li>
+                        <li class="flex items-start sm:items-center"><i data-lucide="video" class="w-4 h-4 mr-2 mt-1 sm:mt-0 text-sdek shrink-0"></i>Съемки с Артемом и Кристиной на этой неделе (до 22 июня)</li>
+                        <li class="flex items-start sm:items-center"><i data-lucide="message-circle" class="w-4 h-4 mr-2 mt-1 sm:mt-0 text-sdek shrink-0"></i>Брейншторм: поиск контента, который понравится подписчикам</li>
+                        <li class="flex items-start sm:items-center"><i data-lucide="refresh-cw" class="w-4 h-4 mr-2 mt-1 sm:mt-0 text-sdek shrink-0"></i>Перерепосты в ВК (ответственная: Виолетта)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-3 sm:mb-4 mt-6 md:mt-0 text-slate-700">Распределение ролей и форматов</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm sm:text-base">
+                        <li><span class="font-semibold text-dark">Оля:</span> Ролики дают сильное репутационное удержание, отлично подходят для знакомства с компанией.</li>
+                        <li><span class="font-semibold text-dark">Артем и Кристина:</span> Съемка новых Reels.</li>
+                        <li><span class="font-semibold text-dark">Информационный контент:</span> Создание новых каруселей для репостов и сохранений. Задача — сделать блог интересным, чтобы аудитория хотела оставаться.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Стратегия и гипотезы -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 mb-8 sm:mb-12">
+            <div class="glass-card p-5 sm:p-8">
+                <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 flex items-center"><i data-lucide="target" class="mr-3 text-sdek shrink-0"></i> Цели на июль</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-sdek-light text-sdek flex items-center justify-center font-bold mr-4 shrink-0">1</div>
+                        <p class="text-slate-600 mt-1">Отказаться от оформления «Актуального» в пользу объема контента.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-sdek-light text-sdek flex items-center justify-center font-bold mr-4 shrink-0">2</div>
+                        <p class="text-slate-600 mt-1">Написать <strong>10 постов для ВК</strong> (5 уже готовы + 5 новых).</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-8 h-8 rounded-full bg-sdek-light text-sdek flex items-center justify-center font-bold mr-4 shrink-0">3</div>
+                        <p class="text-slate-600 mt-1">Выпустить <strong>до 55 роликов</strong> до 20 июля.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="glass-card p-5 sm:p-8 bg-dark text-white">
+                <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 flex items-center"><i data-lucide="lightbulb" class="mr-3 text-sdek shrink-0"></i> Тест гипотез</h2>
+                <div class="space-y-4 text-slate-300 text-sm sm:text-base">
+                    <p class="pb-3 border-b border-slate-700">
+                        <strong class="text-white block mb-1">Смена позиционирования:</strong>
+                        Переход от старой стратегии донесения пользы к новым смыслам и генерации форматов.
+                    </p>
+                    <p class="pb-3 border-b border-slate-700">
+                        <strong class="text-white block mb-1">Формат «Сериал Офис»:</strong>
+                        Продумать логику повествования, которая будет работать как ситком, вовлекая следить за героями-сотрудниками.
+                    </p>
+                    <p class="pb-3 border-b border-slate-700">
+                        <strong class="text-white block mb-1">Юмор для охватов:</strong>
+                        Добавление смешных роликов исключительно для увеличения охвата верхней воронки.
+                    </p>
+                    <p>
+                        <strong class="text-white block mb-1">Масштабирование:</strong>
+                        Добавление одной соцсети на 10 постов после теста охвата (дублирование Reels).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Выводы -->
+        <div class="glass-card p-5 sm:p-8 text-center max-w-4xl mx-auto">
+            <h2 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-dark">Главные выводы</h2>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed text-left sm:text-center">
+                Осознанный контент, направленный на раскрытие репутации компании, вызывает наибольший интерес и удержание внимания аудитории — <strong>его нужно масштабировать</strong>.<br><br>
+                Старая стратегия исчерпала себя, требуется генерация новых смыслов и поиск форматов. Переупаковка профиля (Актуальное) имеет смысл только после притока новых подписчиков. Фокус месяца: <strong>охваты через юмор и системное производство контента впрок.</strong>
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark py-6 sm:py-8 text-center border-t border-slate-800">
+        <p class="text-slate-500 text-xs sm:text-sm px-4">Подготовлено для команды СДЭК &bull; Отчет за период Май-Июнь</p>
+    </footer>
+
+    <script>
+        // Инициализация иконок Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
